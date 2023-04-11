@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Glamping La Mirande, een droomplek in zuid Frankrijk</h1>
+        <nav>
+            <ul class="navBar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/accomodaties">Accommodaties</a></li>
+                <li><a href="/beschikbaar">Beschikbaarheid</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/vragen">FAQ/Vragen</a></li>
+                <li><a href="/info">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="form" aria-label="Registratie form">
+        <h2 class="title">Maak een reservering aan</h2>
+        <section>
+            <label for="voornaam">Voornaam</label>
+            <input type="text" name="voornaam" id="voornaam" aria-label="Voornaam van de gast" size="40">
+            <p class="error-message" id="voornaam-error"></p>
+
+            <label for="tussenvoegsel">Tussenvoegsel</label>
+            <input type="text" name="tussenvoegsel" id="tussenvoegsel" aria-label="Tussenvoegsel van de gast" size="10">
+
+            <label for="achternaam">Achternaam</label>
+            <input type="text" name="achternaam" id="achternaam" aria-label="Achternaam van de gast" size="40">
+            <p class="error-message" id="achternaam-error"></p>
+            
+            <label for="geslacht">Geslacht</label>
+            <input type="text" name="geslacht" id="geslacht" aria-label="Geslacht van de gast tbv aanhef (man/vrouw/anders)" size="10">
+            <p class="error-message" id="geslacht-error"></p>
+        </section>
+        <section class="section-color">
+            <label for="straat">Straatnaam</label>
+            <input type="text" name="straat" id="straat" aria-label="Straatnaam van de gast" size="40">
+            <p class="error-message" id="straatnaam-error"></p>
+
+            <label for="huisnummer">Huisnummer</label>
+            <input type="text" name="huisnummer" id="huisnummer" aria-label="Huisnummer van de gast" size="10">
+            <p class="error-message" id="huisnummer-error"></p>
+
+            <label for="postcode">Postcode</label>
+            <input type="text" name="postcode" id="postcode" aria-label="Postcode van de gast" size="8">
+            <p class="error-message" id="postcode-error"></p>
+            
+            <label for="woonplaats">Woonplaats</label>
+            <input type="text" name="woonplaats" id="woonplaats" aria-label="Woonplaats van de gast" size="40">
+            <p class="error-message" id="woonplaats-error"></p>
+        </section>
+        <section>
+            <label for="telefoonnummer">Telefoonnummer</label>
+            <input type="text" name="telefoonnummer" id="telefoonnummer" aria-label="telefoonnummer van de gast" size="12">
+            <p class="error-message" id="telefoonnummer-error"></p>
+
+            <label for="email">emailadres</label>
+            <input type="text" name="email" id="email" aria-label="emailadres van de gast" size="50">
+            <p class="error-message" id="email-error"></p>
+        </section>
+        <section class="section-color">
+            <label for="volwassenen">Aantal Volwassenen</label>
+            <input type="number" name="volwassenen" id="volwassenen" aria-label="aantal volwassenen in het gezelschap" size="3">
+            <p class="error-message" id="volwassenen-error"></p>
+
+            <label for="kinderen">Aantal Kinderen</label>
+            <input type="number" name="kinderen" id="kinderen" aria-label="aantal kinderen in het gezelschap" size="3">
+            <p class="error-message" id="kinderen-error"></p>
+
+            <label for="huisdieren">Aantal Huisdieren</label>
+            <input type="number" name="huisdieren" id="huisdieren" aria-label="aantal huisdieren in het gezelschap" size="3">
+            <p class="error-message" id="huisdieren-error"></p>
+            
+            <label for="auto">Aantal Auto's</label>
+            <input type="number" name="auto" id="auto" aria-label="aantal auto's in het gezelschap" size="3">
+            <p class="error-message" id="auto-error"></p>
+
+            <label for="kenteken">Kenteken</label>
+            <input type="text" name="kenteken" id="kenteken" aria-label="kenteken(s) van de auto('s) tbv de slagboom" size="10">
+            <p class="error-message" id="kenteken-error"></p>
+        </section>
+        <section>
+            <fieldset>
+                <legend tabindex="0">Hoe groot moet de campingplek zijn?</legend>
+                <label for="10km">10 km</label>
+                <input type="radio" name="soortCampingplek" id="10km" value="10km" size="10">
+
+                <label for="20km">20 km</label>
+                <input type="radio" name="soortCampingplek" id="20km" value="20km" size="10">
+
+                <label for="30km">30 km</label>
+                <input type="radio" name="soortCampingplek" id="30km" value="30km" size="10">
+            </fieldset>
+        </section>
+        <section class="section-color">
+            <label for="aankomstdatum">Aankomst datum</label>
+            <input type="date" name="aankomstdatum" id="aankomstdatum" aria-label="datumselectie van de aankomstdatum" size="10">
+
+            <label for="vertrekdatum">Vertrek datum</label>
+            <input type="date" name="vertrekdatum" id="vertrekdatum" aria-label="datumselectie van de vertrekdatum" size="10">
+        </section>
+        <section>
+            <fieldset>
+                <legend tabindex="0">Moet de campingplek voorzien zijn van elektriciteit?</legend>
+                <label for="elektriciteit-ja">Ja</label>
+                <input type="radio" name="elektriciteit" id="elektriciteit-ja" value="Ja" size="3">
+
+                <label for="elektriciteit-nee">Nee</label>
+                <input type="radio" name="elektriciteit" id="elektriciteit-nee" value="Nee" size="3">
+            </fieldset>
+        </section>
+        <section class="section-color">
+            <fieldset>
+                <legend tabindex="0">Moet de camping voorzien zijn van stromend water?</legend>
+                <label for="stromendwater-ja">Ja</label>
+                <input type="radio" name="stromendwater" id="stromendwater-ja" value="Ja" size="3">
+
+                <label for="stromendwater-nee">Nee</label>
+                <input type="radio" name="stromendwater" id="stromendwater-nee" value="Nee" size="3">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend tabindex="0">In welke faciliteiten heeft u nog meer interesse?</legend>
+                <label for="fietsen">Fietsen</label>
+                <input type="checkbox" name="facaliteiten" id="fietsen" value="Fietsen" size="3">
+
+                <label for="kano">Kano's</label>
+                <input type="checkbox" name="faciliteiten" id="kano" value="Kano's" size="3">
+
+                <label for="zwembad">Zwembad</label>
+                <input type="checkbox" name="faciliteiten" id="zwembad" value="Zwembad" size="3">
+            </fieldset>
+        </section>
+        <input id="submit" type="submit" value="Reserveren" aria-label="Druk op deze knop om te reserveren">
+    </form>
+</body>
+</html>

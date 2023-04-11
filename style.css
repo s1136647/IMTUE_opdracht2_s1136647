@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    --primary-color: #ffffff;
+    --secondary-color: #c1eada;
+    --tertiary-color: #0d73cf;
+    --accent-color:  #657b7a;
+}
+
+header {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.title {
+    text-align: center;
+    color: var(--tertiary-color);
+    margin: 5px;
+}
+
+nav {
+    width: 80%;
+    padding: 1rem 0 0.25rem 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navBar h2 {
+    text-align: center;
+    margin: 5px;
+    color: var(--tertiary-color);
+}
+
+.navBar li {
+    float: left;
+}
+
+.navBar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--tertiary-color);
+}
+
+form {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 4px solid var(--tertiary-color);
+    background-color: #ede8e8;
+    width: 60%;
+}
+
+input, label {
+    font-size: 15px;
+    margin: 10px;
+    display: block;
+}
+
+input {
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 15px;
+}
+
+section {
+    padding: 10px;
+}
+
+.section-color {
+    background-color: var(--primary-color);
+}
+
+p {
+    margin: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+}
+
+input[type="submit"]:hover {
+    background-color: #b2dccc;
+}
+
+.error-message {
+    color: red;
+}
